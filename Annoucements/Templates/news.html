@@ -1,0 +1,36 @@
+
+
+  <meta name="viewport" content="width = device-width , initial-scale = 1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<body>
+     {% for post in post_list %}
+            <div class="col-md-8 mt-3 left">
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">{{ post.title }}</h2>
+                        <p class="card-text text-muted h6">{{ post.created_on}} </p>
+                        <p class="card-text">{{post.content |slice:":10000"}}</p>
+                        <a class="btn btn-primary">Read More &rarr;</a>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+
+</body>
+
+
+    <style>
+
+        .card {
+            left : 5%;
+            box-shadow: 0 16px 48px #E3E7EB;
+        }
+
+        body{
+            background-color : rgba(3, 0, 5, 0.66)
+        }
+    </style>
+
+

@@ -1,0 +1,226 @@
+* { margin:0; padding:0; }
+
+html,body{
+  font-family: sans-serif, Arial, Helvetica;
+  height : 100%;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto auto ;
+  padding-top: 20px;
+  text-align: center;
+  background: #111;
+  color: white;
+  font-size: 15px;
+
+}
+
+#rightLogo{
+  text-align: right;
+  padding-right: 15PX;
+
+}
+
+#leftLogo{
+  padding-left: 30px;
+  text-align: left;
+}
+
+.mainpage{
+  height: 100%;
+  z-index: 1;
+  width : 100%;
+}
+
+.sidenav {
+  position: fixed;
+  padding-top: 10px;
+  height: 903px;
+  float : left;
+  left: 0;
+  padding-bottom: 20px;
+  background-color: #222;
+  overflow-x: hidden;
+  border-radius: 0px 0px 10px 0px;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+}
+
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+.active {
+  background-color: #007bff;
+  color: white;
+}
+
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+} 
+
+.cont{
+  left: 2%;
+  display: none;
+  position : absolute;
+  padding-top: 25px;
+  height: 900px;
+}
+
+.orarBorder{
+  background-color: #525659;
+  width :100%;
+  height : 5px;
+  margin-top : -7px;
+}
+
+/* #footer{
+  clear: both;
+  position: relative;
+  height: 200px;
+  margin-top: -200px;
+  background-color: #111;
+  color :white;
+  height : 60px;
+} */
+
+#iddate{
+  text-shadow:2px 2px 4px #b3cce6 ;
+}
+
+#istoric , #financiar ,#note ,#noutati , #contact,
+#curs1 ,#curs2 ,#curs3 ,#curs4 ,#curs5, #curs6{
+  display: none;
+}
+ 
+.card , .shadow{
+  box-shadow: 0 16px 48px #E3E7EB;
+}
+
+#myBtn{
+  background-color: #222;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  opacity: 0.7;
+  border-radius: 8px;
+}
+
+#myBtn:hover{
+  opacity: 1;
+}
+
+#logo{
+  position: absolute;
+  left : -4%;
+  bottom :0%;
+  width :100%;
+  height :auto;
+}
+
+.tab{
+  width: 60%;
+}
+
+
+.tbl{
+  margin-top: 60px;
+}
+
+.tbl, .tbl *{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+  text-align: center;
+}
+
+.tbl th,.tbl td{
+  width: 200px;
+}
+
+.tbl th {
+  background-color: #222;;
+  color: white;
+}
+
+.tbl tr:nth-child(2n+1) {
+  background-color: #f2f2f2;
+}
+
+.tbl tr:hover {
+  background-color: #ddd;
+}
+
+#orarDetails{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.exampleContainer{
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.exampleBox{
+  width: 160px;
+  height: 120px;
+  background-color: lightblue;
+}
+
+.exampleBox td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 12px;
+  text-align: right;
+  vertical-align: bottom;
+}
+
+.explanationBox{
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.explanation{
+  margin-bottom: 0px;
+  padding-left: 10px;
+}

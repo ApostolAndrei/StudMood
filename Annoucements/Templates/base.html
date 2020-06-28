@@ -1,0 +1,868 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Index</title>
+    <meta name="viewport" content="width = device-width , initial-scale = 1">
+    <link rel="stylesheet" href="{% static "base.css" %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="{% static "base.js" %}"></script>
+</head>
+
+
+
+<body class="bg-light">
+
+    <div class="header">
+        <h4 id="leftLogo">Education is power</h4>
+        <p id="rightLogo">Student's platform</p>
+    </div>
+
+    <div class="row container-fluid h-100 w-100">
+        <div class="col-md-3 col-sm-4 col-lg-2 col-5 h-100 sidenav">
+            <a id="iddate" class="sidebar" href="#date" onclick="menu('date');">Date Student</a>
+
+
+            <a id="idnote" class="sidebar" href="#note" onclick="menu('note');">Note</a>
+            <a id="idorar" class="sidebar" href="#orar" onclick="menu('orar');">Orar</a>
+            <button class="dropdown-btn sidebar ">Cursuri
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container sidebar ">
+                <a href="#curs1" onclick="menu('curs1');">Curs 1</a>
+                <a href="#curs2" onclick="menu('curs2');">Curs 2</a>
+                <a href="#curs3" onclick="menu('curs3');">Curs 3</a>
+                <a href="#curs4" onclick="menu('curs4');">Curs 4</a>
+                <a href="#curs5" onclick="menu('curs5');">Curs 5</a>
+                <a href="#curs6" onclick="menu('curs6');">Curs 6</a>
+            </div>
+            <a id="idnoutati" class="sidebar" href="/noutati" onclick="menu('noutati');">Noutati</a>
+            <a id="idcontact" class="sidebar" href="#contact" onclick="menu('contact');">Secretariat</a>
+             <a id="idmateriale" class="sidebar" href="#materiale" onclick="menu('materiale');">Materiale</a>
+
+
+            <img src="{% static "logo.jpeg" %}" id="logo" class="">
+        </div>
+
+        <div class=" col mt-3">
+            <div id="date">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 h-100">
+
+                        <div class="card" style="border-radius: 17px;">
+                            <div class="card-body">
+                                <h5 class="card-title"> Date General</h5>
+                                <br>
+                                <table class="table table-sm table-hover ">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Nume</th>
+                                            <td>Popescu</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Prenume</th>
+                                            <td>Alexandru</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Data nastere</th>
+                                            <td>03/07/1999</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Tara nastere</th>
+                                            <td>Romania</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Judet nastere</th>
+                                            <td>Dolj</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Localitate nastere</th>
+                                            <td>Craiova</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Sex</th>
+                                            <td>Masculin</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Religie</th>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Numar cont</th>
+                                            <td>2</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Cetatenie</th>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Nationalitate</th>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Etnie</th>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">CNP</th>
+                                            <td>1234567891230</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">SERIE NI/CI</th>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Instituţie emitentă BI/CI</th>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">BI/CI emis la data</th>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">BI/CI valabil până la data</th>
+                                            <td>2</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="card mt-4  " style="border-radius: 17px;">
+                            <div class="card-body">
+                                <h5 class="card-title"> Contact</h5>
+                                <br>
+                                <table class="table table-sm table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <th class="border-top-0">Domiciliu stabil</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Adresa</th>
+                                            <td>Str. Universitatii, Nr. 0</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Localitate</th>
+                                            <td>2000</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Judet</th>
+                                            <td>Otopeni</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Tara</th>
+                                            <td>Romania</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Telefon</th>
+                                            <td>0712345678</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Email</th>
+
+                                            <td>StudMood@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Adresa Web</th>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <th> <br></th>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="border-top-0">Resedinta</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Adresa</th>
+                                            <td>Str. Universitatii, Nr. 0</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Localitate</th>
+                                            <td>Otopeni</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Judet</th>
+                                            <td>0712345678</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Tara</th>
+                                            <td>Romania</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-5">
+                        <div class="card   " style="border-radius: 17px;">
+                            <div class="card-body">
+                                <h5 class="card-title"> Scolaritate</h5>
+                                <br>
+                                <table class="table table-sm table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <th class="border-top-0">Informatii Scolaritate</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Categorie studii</th>
+                                            <td>Absolvent liceu</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">An absolvire liceu</th>
+                                            <td>2000</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Medie bacalaureat</th>
+                                            <td>0.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Olimpic</th>
+                                            <td>DA/NU</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Provenienţă</th>
+                                            <td>Alta provenienta</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Medie admitere</th>
+
+                                            <td>0.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Sesiune admitere</th>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Promoţie</th>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <br>
+                                            </th>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="border-top-0">Context Scolaritate</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Facultate/colegiu</th>
+                                            <td>FMI</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Tip studii</th>
+                                            <td>Studii universitare de licenta</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Specializare</th>
+                                            <td>Informatica</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">FI</th>
+                                            <td>Invatamant cu frecventa</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Modul</th>
+                                            <td>I</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Nr. matricol</th>
+                                            <td>000/2018</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Tip loc</th>
+                                            <td>Roman bugetat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Status curent</th>
+                                            <td>Inmatriculat</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="card mt-4  " style="border-radius: 17px;">
+
+                            <div class="card-body">
+                                <h5 class="card-title" style="border-radius: 17px;"> Info RMU</h5>
+                                <br>
+
+                                <select class="custom-select custom-select-sm">
+                                    <option value="" disabled selected>An studiu</option>
+                                    <option value="1" class="font-weight-bold">An I</option>
+                                    <option value="2" class="font-weight-bold">An II</option>
+                                    <option value="3" class="font-weight-bold">An III</option>
+                                    <option value="4" class="font-weight-bold">An IV</option>
+                                </select>
+                                <br>
+                                <br>
+                                <table class="table table-sm table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Tipuri burse</th>
+                                            <td>Fara bursa</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Statut cazare</th>
+                                            <td>Nu este cazul</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Situatii medicale</th>
+                                            <td>Nu este cazul</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+
+
+                        <div class="card mt-4 " style="border-radius: 17px;">
+
+                            <div class="card-body">
+                                <h5 class="card-title"> Istoric Scolar</h5>
+                                <br>
+
+                                <select class="custom-select custom-select-sm">
+                                    <option value="" disabled selected>An studiu</option>
+                                    <option value="1" class="font-weight-bold">An I &emsp;&ensp;
+                                        [2018-2019]
+                                    </option>
+                                    <option value="2" class="font-weight-bold">An II&ensp; &ensp;
+                                        &nbsp;[2019-2020]
+                                    </option>
+                                    <option value="3" class="font-weight-bold">An III&ensp;&ensp;
+                                        &nbsp;[2020-2021]
+                                    </option>
+                                    <option value="4" class="font-weight-bold">An IV&ensp;&ensp;
+                                        &nbsp;[2021-2022]
+                                    </option>
+                                </select>
+                                <br>
+                                <br>
+
+                                <table class="table table-sm table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row" class="istoric">Semestru</th>
+
+                                            <td style="text-align: center;">Medie Ponderata</td>
+                                            <td style="text-align: center;">Nr. puncte credite</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="istoric">Semestrul 1</th>
+
+                                            <td style="text-align: center;">0.00</td>
+                                            <td style="text-align: center;">000</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="istoric"> Semestrul 2</th>
+                                            <td style="text-align: center;">0.00</td>
+                                            <td style="text-align: center;">000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row" class="istoric"> Anual</th>
+                                            <td style="text-align: center;">0.00</td>
+                                            <td style="text-align: center;">000</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="financiar">
+                <h1> Work in progress..</h1>
+            </div>
+
+            <div id="note" class="container w-100 col-lg-12 col-md-10 col-sm-12 col-1">
+                <div class="row justify-content-center">
+                    <select class="mdb-select md-form rounded "
+                        style="background-color: #222; color:white; text-align: center;">
+                        <option value="" disabled selected>An studiu</option>
+                        <option value="1">An 1</option>
+                        <option value="2">An 2</option>
+                        <option value="3">An 3</option>
+                        <option value="4">An 4</option>
+                    </select>
+                </div>
+                <div class="row justify-content-center">
+                    <table class="tbl shadow">
+                        <thead>
+                            <tr>
+                                <th>Materie</th>
+                                <th>Semestru</th>
+                                <th>Notă</th>
+                                <th>Medie</th>
+                                <th>Numar de credite</th>
+                                <th>Nr. puncte credit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Algebra 1</td>
+                                <td>1</td>
+                                <td>4.00</td>
+                                <td>4.00</td>
+                                <td>4.00</td>
+                                <td>0.00</td>
+                            </tr>
+                            <tr>
+                                <td>Algebra 2</td>
+                                <td>1</td>
+                                <td>3.00</td>
+                                <td>3.00</td>
+                                <td>4.00</td>
+                                <td>0.00</td>
+                            </tr>
+                            <tr>
+                                <td>Algebra 3</td>
+                                <td>1</td>
+                                <td>4.00</td>
+                                <td>4.00</td>
+                                <td>4.00</td>
+                                <td>0.00</td>
+                            </tr>
+                            <tr>
+                                <td>Algebra 1</td>
+                                <td>1</td>
+                                <td>4.00</td>
+                                <td>4.00</td>
+                                <td>4.00</td>
+                                <td>0.00</td>
+                            </tr>
+                            <tr>
+                                <td>Algebra 2</td>
+                                <td>1</td>
+                                <td>3.00</td>
+                                <td>3.00</td>
+                                <td>4.00</td>
+                                <td>0.00</td>
+                            </tr>
+                            <tr>
+                                <td>Algebra 3</td>
+                                <td>1</td>
+                                <td>4.00</td>
+                                <td>4.00</td>
+                                <td>4.00</td>
+                                <td>0.00</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #222;  border-right-style:none;"></td>
+                                <td style="background-color: #222;  border-right-style:none;  border-left-style:none;">
+                                </td>
+                                <td style="background-color: #222;  border-right-style:none ;  border-left-style:none;">
+                                </td>
+                                <td style="background-color: #222;  border-right-style:none ;  border-left-style:none;">
+                                </td>
+                                <td style="background-color: #222;  border-right-style:none ;  border-left-style:none;">
+                                </td>
+                                <td style="background-color: #222 ;  border-left-style:none;"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Algebra 1</td>
+                                <td>2</td>
+                                <td>4.00</td>
+                                <td>4.00</td>
+                                <td>4.00</td>
+                                <td>0.00</td>
+                            </tr>
+                            <tr>
+                                <td>Algebra 2</td>
+                                <td>2</td>
+                                <td>3.00</td>
+                                <td>3.00</td>
+                                <td>4.00</td>
+                                <td>0.00</td>
+                            </tr>
+                            <tr>
+                                <td>Algebra 3</td>
+                                <td>2</td>
+                                <td>4.00</td>
+                                <td>4.00</td>
+                                <td>4.00</td>
+                                <td>0.00</td>
+                            </tr>
+                            <tr>
+                                <td>Algebra 1</td>
+                                <td>2</td>
+                                <td>4.00</td>
+                                <td>4.00</td>
+                                <td>4.00</td>
+                                <td>0.00</td>
+                            </tr>
+                            <tr>
+                                <td>Algebra 2</td>
+                                <td>2</td>
+                                <td>3.00</td>
+                                <td>3.00</td>
+                                <td>4.00</td>
+                                <td>0.00</td>
+                            </tr>
+                            <tr>
+                                <td>Algebra 3</td>
+                                <td>2</td>
+                                <td>4.00</td>
+                                <td>4.00</td>
+                                <td>4.00</td>
+                                <td>0.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div class="container cont col-lg-9 col-md-10 col-sm-12 col-xs-12" id="orar">
+                <embed src="../static/orar_grupe_2019-2020_s2.pdf" type="application/pdf" width="100%" height="830px" />
+                <p class="orarBorder"></p>
+
+
+                <div id="orarDetails">
+                    <h4 class="badge badge-dark badge-pill text-wrap text-center font-weight-bold"
+                        style="width: 8rem; font-size: large;">
+                        Legenda</h4>
+                    <div class="row ">
+                        <div class="exampleContainer col-lg-6 col-md-6 col-sm-12 col-12">
+                            <table class="exampleBox">
+                                <tr>
+                                    <td>1(Stoilow)</td>
+                                </tr>
+                            </table>
+                            <div class="explanationBox">
+                                <p class="explanation">Curs în amfiteatrul Stoilow</p>
+                            </div>
+                        </div>
+
+                        <div class="exampleContainer col-lg-6 col-md-6   col-sm-12 col-12">
+                            <table class="exampleBox">
+                                <tr>
+                                    <td>(L-)123</td>
+                                </tr>
+                            </table>
+                            <div class="explanationBox">
+                                <p class="explanation">Laborator/Seminar săptămânal în sala 123</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="exampleContainer col-lg-6 col-md-12 col-sm-12 col-12">
+                            <table class="exampleBox">
+                                <tr>
+                                    <td>(L-)123</td>
+                                </tr>
+                                <tr>
+                                    <td>(L-)123</td>
+                                </tr>
+                            </table>
+                            <div class="explanationBox">
+                                <p class="explanation">Laborator/Seminar în săptămâni impare în sala 123</p>
+                                <p class="explanation">Laborator/Seminar în săptămâni pare în sala 123</p>
+                            </div>
+                        </div>
+
+                        <div class="exampleContainer col-lg-6 col-md-12 col-sm-12 col-12">
+                            <table class="exampleBox">
+                                <tr>
+                                    <td>Grupa 1 L-123</td>
+                                </tr>
+                                <tr>
+                                    <td>Grupa 2 L-123</td>
+                                </tr>
+                            </table>
+                            <div class="explanationBox">
+                                <p class="explanation">Laborator săptămânal în sala 123 pentru grupa 1</p>
+                                <p class="explanation">Laborator săptămânal în sala 123 pentru grupa 2</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="exampleContainer col-12 col-lg-12">
+                            <table class="exampleBox">
+                                <tr>
+                                    <td>Grupa 1 L-123</td>
+                                </tr>
+                                <tr>
+                                    <td>Grupa 2 L-123</td>
+                                </tr>
+                                <tr>
+                                    <td>Grupa 1 L-123</td>
+                                </tr>
+                                <tr>
+                                    <td>Grupa 2 L-123</td>
+                                </tr>
+                            </table>
+                            <div class="explanationBox">
+                                <p class="explanation">Laborator în săptămâni impare în sala 123 pentru grupa 1
+                                </p>
+                                <p class="explanation">Laborator în săptămâni impare în sala 123 pentru grupa 2
+                                </p>
+                                <p class="explanation">Laborator în săptămâni pare în sala 123 pentru grupa 1
+                                </p>
+                                <p class="explanation">Laborator în săptămâni pare în sala 123 pentru grupa 2
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <div id="noutati">
+                <div class="col-md-8 col-12 left">
+
+                    <div class="card mb-4 ">
+                        <div class="card-body">
+                            <h2 class="card-title">{{ post.title }}</h2>
+                            <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
+                            <p class="card-text">{{post.content|slice:":200" }}</p>
+                            <a>Read More
+                                &rarr;</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col mt-3">
+                <div id="contact">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 h-100">
+
+
+                            <div class="card" style="border-radius: 17px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Secretar șef</h5>
+                                    <br>
+                                    <table class="table table-sm table-hover ">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Nume</th>
+                                                <td>Secretara 1</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Email</th>
+                                                <td>secretara1@fmi.unibuc.ro</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Telefon</th>
+                                                <td>021 305 3801</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                             <div class="card" style="border-radius: 17px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Secretar Matematică și Informatică, Anul I</h5>
+                                    <br>
+                                    <table class="table table-sm table-hover ">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Nume</th>
+                                                <td>Secretara 2</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Email</th>
+                                                <td>secretara2@fmi.unibuc.ro</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Telefon</th>
+                                                <td>021 305 3802</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="card" style="border-radius: 17px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Secretar Matematică și Informatică, Anul II</h5>
+                                    <br>
+                                    <table class="table table-sm table-hover ">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Nume</th>
+                                                <td>Secretara 3</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Email</th>
+                                                <td>secretara3@fmi.unibuc.ro</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Telefon</th>
+                                                <td>021 305 3803</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="card" style="border-radius: 17px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Secretar Matematică și Informatică, Anul III</h5>
+                                    <br>
+                                    <table class="table table-sm table-hover ">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Nume</th>
+                                                <td>Secretara 4</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Email</th>
+                                                <td>secretara4@fmi.unibuc.ro</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Telefon</th>
+                                                <td>021 305 3804</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="card" style="border-radius: 17px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Secretar Calculatoare și Tehnologia Informației (toți anii). Doctorat (toți anii)I</h5>
+                                    <br>
+                                    <table class="table table-sm table-hover ">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Nume</th>
+                                                <td>Secretara 5</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Email</th>
+                                                <td>secretara5@fmi.unibuc.ro</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Telefon</th>
+                                                <td>021 305 3805</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="card" style="border-radius: 17px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Secretar Master IF (toți anii). Activități de arhivă. Corespondență și relații cu publicul</h5>
+                                    <br>
+                                    <table class="table table-sm table-hover ">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Nume</th>
+                                                <td>Secretara 6</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Email</th>
+                                                <td>secretara6@fmi.unibuc.ro</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Telefon</th>
+                                                <td>021 305 3806</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-5">
+
+
+                            <div class="card" style="border-radius: 17px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Programul cu publicul</h5>
+                                    <br>
+                                    <table class="table table-sm table-hover ">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Luni</th>
+                                                <td>12:00 – 13:00</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Marti</th>
+                                                <td>12:00 – 13:00</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Miercuri</th>
+                                                <td>12:00 – 13:00</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Joi</th>
+                                                <td>12:00 – 13:00</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Vineri</th>
+                                                <td>12:00 – 13:00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="materiale">
+
+                <h1>PROGRAMARE ORIENTATA OBIECT</h1>
+
+                <embed src="../static/1.pdf" type="application/pdf" width="100%"  height="300px" />
+
+                <h1 text-color="red" >ALGEBRA</h1>
+                <p></p>
+                  <embed src="../static/iloveALGEBRAA.pdf" type="application/pdf" width="100%"  height="300px"  />
+
+                <h1>BAZA DE DATE</h1>
+                <embed src="../static/Laborator2_SQL_an2.pdf"  type="application/pdf" width="100%"  height="300px"/>
+
+
+
+            </div>
+
+
+            </div>
+
+            <button id="myBtn" title="Go to top"><i class="fa fa-chevron-up">
+                </i></button>
+
+
+            <!--
+    <footer id="footer">
+    </footer> -->
+</body>
+
+</html>
